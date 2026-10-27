@@ -54,9 +54,9 @@ function get_custom_git_stats() {
     if [ "$ahead" -gt 0 ]; then git_str+=" ${c_remote}⇡${ahead}"; fi
     if [ "$behind" -gt 0 ]; then git_str+=" ${c_remote}⇣${behind}"; fi
 
-    git_str+=")%b%f"
+    git_str+="%F{244})%b%f"
     echo "$git_str"
 }
 
-PROMPT='%F{76}✨%f %B%F{250}%~%f$(get_custom_git_stats)%b $ '
+PROMPT='%F{76}✨%f %B%F{250}%~%f$(get_custom_git_stats) $ '
 
