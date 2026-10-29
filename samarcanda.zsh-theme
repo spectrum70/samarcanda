@@ -58,5 +58,5 @@ function get_custom_git_stats() {
     echo "$git_str"
 }
 
-PROMPT='%F{76}✨%f %B%F{250}%~%f$(get_custom_git_stats) $ '
+PROMPT='%F{76}✨%f %B%F{250}%~%f$(get_custom_git_stats)%b $ '
 
